@@ -4,50 +4,435 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="imgs/L_Drive_23451.ico">
     <link rel="stylesheet" href="css/boots/bootstrap.min.css">
-    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>L Pag Dev</title>
 </head>
-<body>
+<body class="p-3">
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <a class="navbar-brand" href="index.html"><img src="imgs/L_Drive_23451.ico" alt=""height="50px"></a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Portfolio
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact </button>
+                </div>
+            </div>
+        </nav>
+        <!-- ending of navbar -->
+    </header>
+
+    <main>
+
+        <br>
+        <h1>Lucas N. Paganine Web Developer Portfolio </h1>
+        <hr>
+
+        <!-- carousel -->
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide carousel-fade " data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="2000">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imgs/3d-under-construction-SBI-300268923.jpg" class="d-block w-100" alt="..." height="500">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Project 1</h5>
+                  <p >Description of the project number one.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/under-construction-SBI-300073000.jpg" class="d-block w-100" alt="..."  height="500">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 >Project 2</h5>
+                  <p>Description of the project number two.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imgs/web-page-is-under-construction-SBI-300551008.jpg" class="d-block w-100" alt="..." height="500">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Project 3</h5>
+                  <p>Description of project number three.</p>
+                </div>
               </div>
             </div>
-          </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- ending of carousel -->
+        
+        <br>
+        <h2>Showcases</h2>
+        <hr>
+        
+        <!-- cards -->
+        <div class="container">
+            <div class="row justify-content-around align-items-center">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-6">
+                            <img src="imgs/proj 3.PNG" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card wither and it can only take 3 lines, that is too little.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-6">
+                            <img src="imgs/proj 3.PNG" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0 align-items-center">
+                          <div class="col-md-6">
+                            <img src="imgs/proj 3.PNG" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- ending of cards -->
+
+        <h2>Details on the Projects</h2>
+        <hr>
+
+        <!-- ending of accordion -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Project #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="container">
+                            <div class="row justify-content-between">
+                                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imgs/proj 3.PNG" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Title</h5>
+                                            <p class="card-text">Some quick example text.</p>
+                                            <a href="#" class="btn btn-primary">Check it out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="imgs/code proj 3.PNG" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Code</h5>
+                                            <p class="card-text">Here's a quick explanation on how the code works.</p>
+                                            <a href="#" class="btn btn-primary">GitHub</a>
+    
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12"> 
+                                    <div>
+                                        <br>
+                                        <strong>Skills</strong>
+                                        <br>
+                                        <br>
+                                        <ul>
+                                            <li>UI/UX</li>
+                                            <li>Web development</li>
+                                            <li>Bootstrap</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                                    <br>
+                                    <strong>Description</strong>
+                                    <br>
+                                    It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                    These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify 
+                                    any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can 
+                                    go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Project #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="imgs/3d-under-construction-SBI-300268923.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Title</h5>
+                                        <p class="card-text">Some quick example text.</p>
+                                        <a href="#" class="btn btn-primary">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="imgs/3d-under-construction-SBI-300268923.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Code</h5>
+                                            <p class="card-text">Here's a quick explanation on how the code works.</p>
+                                        <a href="#" class="btn btn-primary">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12"> 
+                                <div>
+                                    <br>
+                                    <strong>Skills</strong>
+                                    <br>
+                                    <br>
+                                    <ul>
+                                        <li>UI/UX</li>
+                                        <li>Web development</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                                <br>
+                                <strong>Description</strong>
+                                <br>
+                                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify 
+                                any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can 
+                                go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Project #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="imgs/3d-under-construction-SBI-300268923.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Title</h5>
+                                        <p class="card-text">Some quick example text.</p>
+                                        <a href="#" class="btn btn-primary">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="imgs/3d-under-construction-SBI-300268923.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Code</h5>
+                                            <p class="card-text">Here's a quick explanation on how the code works.</p>
+                                        <a href="#" class="btn btn-primary">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12"> 
+                                <div>
+                                    <br>
+                                    <strong>Skills</strong>
+                                    <br>
+                                    <br>
+                                    <ul>
+                                        <li>UI/UX</li>
+                                        <li>Web development</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                                <br>
+                                <strong>Description</strong>
+                                <br>
+                                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify 
+                                any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can 
+                                go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item bg-transparent">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Project #4
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <div class="container">
+                        <div class="row justify-content-between">
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="imgs/3d-under-construction-SBI-300268923.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Title</h5>
+                                        <p class="card-text">Some quick example text.</p>
+                                        <a href="#" class="btn btn-primary">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="imgs/3d-under-construction-SBI-300268923.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Code</h5>
+                                        <p class="card-text">Here's a quick explanation on how the code works.</p>
+                                        <a href="#" class="btn btn-primary">Check it out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12"> 
+                                <div>
+                                    <br>
+                                    <strong>Skills</strong>
+                                    <br>
+                                    <br>
+                                    <ul>
+                                        <li>UI/UX</li>
+                                        <li>Web development</li>
+                                        <li>Bootstrap</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-6 col-md-6 col-sm-12">
+                                <br>
+                                <strong>Description</strong>
+                                <br>
+                                It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify 
+                                any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can 
+                                go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                      </div>    
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+        <!-- ending of accordion -->
+
+        
+        <!-- offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Contact me</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+        
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else (unless it is funny one, then I might show it to my wife).</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleInputMessage"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <br>
+                <h6>Or feel free to:</h6>
+                <ul>
+                    <li>Email me at: <a href="mailto:lucaspaganine@gmail.com">lucaspaganine@gmail.com</a></li>
+                    <li>Send me a message in LinkedIn: <a href="https://www.linkedin.com/in/lucas-paganine-3b4a78144" target="_blank">My Profile</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ending of offcanvas -->
+    </main>
+    <footer>
+
+
+    </footer>
+    <script src="js/script.js"></script>
     <script src="js/boots/bootstrap.bundle.min.js"></script>
 </body>
 </html>
